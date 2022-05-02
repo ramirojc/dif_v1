@@ -2,5 +2,6 @@ scikit-learn
 pandas
 numpy
 streamlit
+streamlit-plotly-events
 plotly
 openpyxl
