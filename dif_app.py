@@ -28,7 +28,7 @@ def load_escenario_file(file):
     return raw_sample, pp_sample, escenario_data
 
 # Setup SideBar
-image = Image.open('D:/DIF_CALDEN/05_Dashboard/calden-consultoria.png')
+image = Image.open('calden-consultoria.png')
 st.sidebar.image(image, caption='Calden Consultoria')
 
 st.sidebar.title('Proyecto Cruce IIBB e IVA')
@@ -217,11 +217,11 @@ elif side_process == 'Analisis Cluster Individuales':
     st.title('Analisis Individual de Cluster')
     st.subheader('Seleccione el cluster que desea analizar')
 
-    data = pd.read_csv('D:\DIF_CALDEN\Resultados\Esc_015_raw_sample.csv')
+    data = pd.read_csv('sample.csv')
 
     cluster_sel = st.selectbox('cluster', data['5_Cl'].sort_values().unique())
 
-    data = pd.read_csv('D:\DIF_CALDEN\Resultados\Esc_015_raw_sample.csv')
+    data = pd.read_csv('sample.csv')
 
     #Metricas Generales
     
