@@ -30,7 +30,7 @@ def load_escenario_file(file):
     return raw_sample, pp_sample, escenario_data
 
 # Setup SideBar
-image = Image.open('D:/DIF_CALDEN/05_Dashboard/calden-consultoria.png')
+image = Image.open('calden-consultoria.png')
 st.sidebar.image(image, caption='Calden Consultoria')
 
 st.sidebar.title('Proyecto Cruce IIBB e IVA')
