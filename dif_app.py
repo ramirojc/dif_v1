@@ -11,7 +11,9 @@ import plotly.express as px
 from streamlit_plotly_events import plotly_events
 from PIL import Image
 
-st.set_page_config(layout="wide")
+st.set_page_config(
+    page_title="Analisis de datos - DIF"
+    layout="wide")
 
 ft_sel = ['BI_IVA', 'DJC_M_BASE_IMPONIBLE_CBA', 'DJC_M_IMPUESTO_DETERMINADO', 'DJC_M_PERCEPCIONES', 'DJC_M_RECAUDACIONES',
     'DJC_M_RETENCIONES', 'DJC_M_SALDO_A_PAGAR_DDJJ', 'DJC_M_SALDO_FAVOR_CONTRIBUYENTE', 'DJC_M_TOTAL_INGRESOS_NO_GRAV', 'Delta_BI']
